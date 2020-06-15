@@ -1,0 +1,15 @@
+server:
+  port: 8082
+  servlet:
+    context-path: /
+
+  #\u6570\u636E\u6E90\u914D\u7F6E
+spring:
+  profiles:
+    active: dev    # dev:\u4F7F\u7528\u7684\u914D\u7F6E\u6587\u4EF6\u662F\u5F00\u53D1\u73AF\u5883\u7684
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  jmx:
+    default-domain: CodeDomain
